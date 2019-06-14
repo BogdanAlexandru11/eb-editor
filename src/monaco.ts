@@ -22,13 +22,13 @@ import * as monaco from 'monaco-editor';
 
 export function createEditor() {
     const editor = monaco.editor.create(document.getElementById('container'), {
-        // theme: "vs-dark'",
-        value: `
-    # Hello world
-    
-    Loren ipsum
+        theme: "vs-dark",
+        value: `public class Test {
+        public static void main(String args[]){
+    }
+}
     `,
-        language: 'markdown'
+        language: 'java'
     });
 
     return editor;
